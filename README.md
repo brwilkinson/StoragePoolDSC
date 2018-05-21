@@ -5,6 +5,11 @@ This is a very limited resource for deploying servers in Azure.
 
 This creates a Storage Pool, a Virtual Disk and a Volume.
 
+You will want to select a column count equal to the number of disks that you may want to extend the pool in the future.
+i.e. if the pool size has 1 disk, then you can add 1 disk
+i.e. if the pool size has 6 disks, with a column count of 2, then you can add 2 extra disks to make it 8 disks.
+i.e. with storage pools you are forced to add the number of disks equal to the column count.
+
 ````
 Configuration MyServerConfig 
 { 
@@ -35,7 +40,7 @@ $CD = @{
         @{  
             NodeName       = "localhost"  
      
-              StoragePools = @{ FriendlyName = 'DATA';DriveLetter = 'F';LUNS = (0,1,2,3);ColumnCount = 2}, 
+              StoragePools = @{ FriendlyName = 'DATA'   ; DriveLetter = 'F' ; LUNS = (0,1,2,3);ColumnCount = 2}, 
                              @{ FriendlyName = 'LOGS'   ; DriveLetter = 'G' ; LUNS = (8)}, 
                              @{ FriendlyName = 'TEMPDB' ; DriveLetter = 'H' ; LUNS = (12)}, 
                              @{ FriendlyName = 'BACKUP' ; DriveLetter = 'I' ; LUNS = (15)} 
