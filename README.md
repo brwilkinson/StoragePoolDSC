@@ -9,7 +9,7 @@ There are no Ensure = Absent capabilities
 
 There are no capabilities to extend the sizes after the initial deployment
 
-This creates a Storage Pool, a Virtual Disk and a Volume.
+This creates a *Storage Pool*, *a Virtual Disk* and *a Volume*.
 
 You will want to select a column count equal to the number of disks that you may want to extend the pool in the future.
 i.e. if the pool size has 1 disk, then you can add 1 disk
