@@ -4,7 +4,9 @@ Create a storage pool DSC Resource (designed for standing up SQL/File Servers in
 This is a very limited resource for deploying servers in Azure. 
 
 There are no Ensure = Absent capabilities
+
     There are no capabilities to delete any Pools/VirtualDisk/Volumes (only the initial create)
+
 There are no capabilities to extend the sizes after the initial deployment
 
 This creates a Storage Pool, a Virtual Disk and a Volume.
