@@ -36,9 +36,9 @@ $CD = @{
             NodeName       = "localhost"  
      
               StoragePools = @{ FriendlyName = 'DATA';DriveLetter = 'F';LUNS = (0,1,2,3);ColumnCount = 2}, 
-                       @{ FriendlyName = 'LOGS'   ; DriveLetter = 'G' ; LUNS = (8)}, 
-                       @{ FriendlyName = 'TEMPDB' ; DriveLetter = 'H' ; LUNS = (12)}, 
-                       @{ FriendlyName = 'BACKUP' ; DriveLetter = 'I' ; LUNS = (15)} 
+                             @{ FriendlyName = 'LOGS'   ; DriveLetter = 'G' ; LUNS = (8)}, 
+                             @{ FriendlyName = 'TEMPDB' ; DriveLetter = 'H' ; LUNS = (12)}, 
+                             @{ FriendlyName = 'BACKUP' ; DriveLetter = 'I' ; LUNS = (15)} 
                              
          } 
      ) 
